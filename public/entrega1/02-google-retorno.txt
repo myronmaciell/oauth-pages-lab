@@ -1,1 +1,1 @@
-https://oauth-pages-lab-cxy.pages.dev/oauth/login/google
+https://oauth-pages-lab-cxy.pages.dev/oauth/callback/google
