@@ -4,10 +4,6 @@ export function randomBytes(length = 32) {
     return bytes;
 }
 
-export function randomToken(length = 32) {
-    return base64url(randomBytes(length));
-}
-
 export function base64url(bytes) {
     let binary = "";
 
@@ -19,6 +15,10 @@ export function base64url(bytes) {
         .replace(/\+/g, "-")
         .replace(/\//g, "_")
         .replace(/=+$/g, "");
+}
+
+export function randomToken(length = 32) {
+    return base64url(randomBytes(length));
 }
 
 export function utf8Bytes(value) {
