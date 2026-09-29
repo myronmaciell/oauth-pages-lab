@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Laboratório OAuth</title>
+
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="card">
+
+            <h1>Laboratório OAuth</h1>
+
+            <p id="status">
+                Verificando sessão...
+            </p>
+
+            <div id="login-area">
+
+                <a
+                    class="button google"
+                    href="/oauth/login/google"
+                >
+                    Entrar com Google
+                </a>
+
+                <a
+                    class="button github"
+                    href="/oauth/login/github"
+                >
+                    Entrar com GitHub
+                </a>
+
+            </div>
+
+            <div id="user-area" hidden>
+
+                <p id="user-info"></p>
+
+                <form
+                    method="post"
+                    action="/oauth/logout"
+                >
+                    <button type="submit">
+                        Sair
+                    </button>
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="/app.js"></script>
+
+</body>
+</html>
