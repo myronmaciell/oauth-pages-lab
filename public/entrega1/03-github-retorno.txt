@@ -1,0 +1,5 @@
+Homepage URL:
+https://oauth-pages-lab-cxy.pages.dev
+
+Authorization callback URL:
+https://oauth-pages-lab-cxy.pages.dev/oauth/callback/github
