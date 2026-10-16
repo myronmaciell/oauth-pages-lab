@@ -4,3 +4,4 @@ CREATE TABLE IF NOT EXISTS notas (
   aluno TEXT NOT NULL,
   nota REAL NOT NULL,
   criado_em TEXT DEFAULT (datetime('now'))
+);
