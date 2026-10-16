@@ -33,8 +33,8 @@ export async function onRequestGet({ request, params, env }) {
   const idHash = await sha256Base64Url(txId);
 
   const tx = await env.DB.prepare(
-    "SELECT * FROM oauth_transactions WHERE id_hash = ?1 AND expires_at > ?2"
-  ).bind(idHash, now).first();
+  `SELECT * FROM oauth_transactions WHERE id_hash = '${idHash}' AND expires_at > ${now}`
+).first();
 
   if (!tx) {
     return fail("FAIL-4 transacao nao encontrada no SELECT");
